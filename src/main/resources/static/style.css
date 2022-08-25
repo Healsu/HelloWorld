@@ -1,0 +1,30 @@
+div{
+    bottom: 15%;
+    display: block;
+    position: absolute;
+    animation: linear infinite alternate;
+    animation-name: run;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+        transform: translateX(0);
+    }
+    100% {
+        left: 100%;
+        transform: translateX(-100%);}}
+
+body {
+    background-color: #fff;
+    -webkit-animation: random 5s infinite;
+    animation: random 5s infinite;
+}
+@keyframes  random {
+    15% { background-color: red; }
+    30% { background-color: yellow; }
+    45% { background-color: green; }
+    60% { background-color: blue; }
+    75% { background-color: white; }
+}
